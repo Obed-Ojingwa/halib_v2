@@ -42,7 +42,7 @@ export default function HeroSection() {
       <motion.div
         className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[200px] h-[150px] opacity-[0.08] hidden lg:block"
         style={{
-          backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=\'0 0 100 50\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M5,45 Q15,35 25,40 T45,45 Q55,35 65,40 T85,45 Q95,35 95,25 L95,5 L5,5 Z\' fill=\'none\' stroke=\'%23D4A373\' stroke-width=\'1.5\' opacity=\'0.3\'/%3E%3C/svg%3E')",
+            backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%270%200%20100%2050%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M5,45 Q15,35 25,40 T45,45 Q55,35 65,40 T85,45 Q95,35 95,25 L95,5 L5,5 Z%27 fill=%27none%27 stroke=%27%23D4A373%27 stroke-width=%271.5%27 opacity=%270.3%27/%3E%3C/svg%3E")',
           pointerEvents: 'none'
         }}
         variants={floatSlow}
@@ -239,8 +239,8 @@ export default function HeroSection() {
           />
           <defs>
             <linearGradient id="hero-gradient" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="var(--cream)" />
-              <stop offset="100%" stop-color="var(--cream-white)" />
+              <stop offset="0%" stopColor="var(--cream)" />
+              <stop offset="100%" stopColor="var(--cream-white)" />
             </linearGradient>
           </defs>
         </svg>
