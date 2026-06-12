@@ -135,16 +135,16 @@ a {
   }
 
   .btn-ghost {
-    @apply inline-flex items-center gap-2 px-5 py-3 rounded-full font-sans font-medium text-sm tracking-wide;
-    color: rgb(36, 35, 2);
-    border: 1.5px solid rgba(112, 3, 3, 0.6);
-    background: rgba(88, 20, 20, 0.08);
-    backdrop-filter: blur(8px);
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-medium text-sm tracking-wide border;
+    color: var(--text-primary);
+    border-color: rgba(0, 0, 0, 0.2);
+    background: rgba(248, 169, 116, 0.08);
     transition: var(--transition-base);
   }
   .btn-ghost:hover {
-    background: rgba(206, 3, 3, 0.18);
-    border-color: rgba(204, 29, 29, 0.9);
+    background: rgba(248, 169, 116, 0.15);
+    border-color: var(--peach);
+    transform: translateY(-1px);
   }
 
   /* Section Headings */
@@ -202,14 +202,33 @@ a {
 /* ─── Utility Layer ──────────────────────────────────────────────── */
 @layer utilities {
   .text-balance { text-wrap: balance; }
+  
   .text-gradient {
     background: linear-gradient(135deg, #F8A974, #F2B6B8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  
   .mask-fade-bottom {
     -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  /* Shadow utilities for premium feel */
+  .shadow-luxury-sm {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  }
+  
+  .shadow-luxury {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .shadow-luxury-lg {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .shadow-luxury-xl {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
   }
 }

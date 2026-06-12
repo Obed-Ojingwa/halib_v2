@@ -14,7 +14,7 @@ const STATS = [
 export default function CICImpactSection() {
   return (
     <section
-      className="py-8 lg:py-16 overflow-hidden relative bg-white"
+      className="py-12 lg:py-24 overflow-hidden relative bg-white"
     >
       {/* Ambient orb */}
       <div

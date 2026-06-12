@@ -7,7 +7,7 @@ import { fadeUp, staggerContainer } from '@/lib/animations'
 export default function CTABanner() {
   return (
     <section
-      className="py-8 lg:py-16 relative overflow-hidden bg-white border-b border-black/10"
+      className="py-16 lg:py-28 relative overflow-hidden bg-white border-b border-black/10"
     >
       {/* Decorative shapes */}
       <div
@@ -33,18 +33,18 @@ export default function CTABanner() {
 
           <motion.h2
             variants={fadeUp}
-            className="font-serif font-semibold text-white"
-            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: '1.1' }}
+            className="font-serif font-semibold"
+            style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', lineHeight: '1.1', color: 'var(--text-primary)' }}
           >
             Let's Create Something
             <br />
-            Truly Unforgettable
+            <em className="not-italic" style={{ color: 'var(--peach)' }}>Truly Unforgettable</em>
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
             className="font-sans font-light mx-auto max-w-lg"
-            style={{ fontSize: '1.05rem', color: 'rgba(0,0,0,0.8)', lineHeight: '1.7' }}
+            style={{ fontSize: '1.05rem', color: '#555555', lineHeight: '1.7' }}
           >
             Whether you're planning a wedding, a birthday, or simply want to learn the art of baking —
             Haliberry Cake is here to make it magical.
@@ -57,7 +57,7 @@ export default function CTABanner() {
             <Link
               to="/shop"
               className="inline-flex items-center gap-2 bg-white font-sans font-medium text-sm px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
-              style={{ color: 'var(--text-secondary)' }}
+              style={{ color: '#333333' }}
             >
               <Cake size={16} />
               Order Your Cake
@@ -66,7 +66,7 @@ export default function CTABanner() {
             <Link
               to="/cake-classes"
               className="inline-flex items-center gap-2 font-sans font-medium text-sm px-7 py-3.5 rounded-full transition-all duration-300 hover:-translate-y-0.5"
-              style={{ border: '2px solid rgba(0,0,0,0.7)', color: 'var(--text-secondary)' }}
+              style={{ border: '2px solid #555555', color: '#333333', background: 'transparent' }}
             >
               <BookOpen size={16} />
               Book a Baking Class

@@ -39,7 +39,7 @@ export default function Shop() {
 
       {/* ── Page Hero ─────────────────────────────────────────── */}
       <section
-        className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 text-center overflow-hidden bg-white border-b border-black/10"
+        className="relative pt-32 pb-12 lg:pt-40 lg:pb-16 text-center overflow-hidden bg-white border-b border-black/5"
       >
         {/* Decorative orb */}
         <div
@@ -73,7 +73,7 @@ export default function Shop() {
       </section>
 
       {/* ── Main Shop Content ─────────────────────────────────── */}
-      <section className="py-14 lg:py-20" style={{ background: 'white' }}>
+      <section className="py-16 lg:py-28" style={{ background: 'white' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Category filter */}

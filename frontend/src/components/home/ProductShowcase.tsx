@@ -59,12 +59,12 @@ const CATEGORIES = [
 
 export default function ProductShowcase() {
   return (
-    <section className="py-8 lg:py-16" style={{ background: 'white' }}>
+    <section className="py-12 lg:py-24" style={{ background: 'white' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <motion.div
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-20"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -172,13 +172,13 @@ export default function ProductShowcase() {
 
         {/* Bottom CTA */}
         <motion.div
-          className="text-center mt-14"
+          className="text-center mt-20 pt-8 border-t border-black/5"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="font-sans text-sm mb-5" style={{ color: 'var(--text-muted)' }}>
+          <p className="font-sans text-sm mb-6" style={{ color: 'var(--text-muted)' }}>
             All cakes are made to order with premium, locally sourced ingredients.
           </p>
           <Link to="/contact" className="btn-outline">

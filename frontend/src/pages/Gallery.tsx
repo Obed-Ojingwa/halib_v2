@@ -17,31 +17,27 @@ export default function Gallery() {
   return (
     <>
     <WhatsAppFloatButton />
-      <section className="pt-32 pb-20 relative overflow-hidden bg-white border-b border-black/10">
+      <section className="pt-32 pb-12 relative overflow-hidden bg-white border-b border-black/5">
         <div className="absolute inset-0 opacity-10 pointer-events-none"
-        // Changed background gradient colors here, keeping the same general style
-          style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(0,0,0,0.05), transparent 65%)' }}/>
-        <div className="relative min-h-[2vh] flex items-center overflow-hidden bg-white shadow-lg">
-          <motion.div initial="hidden" animate="visible" className="space-y-4">
+          style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, rgba(0,0,0,0.03), transparent 65%)' }}/>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div initial="hidden" animate="visible" className="space-y-4 max-w-2xl">
             <motion.span className="font-sans text-xs tracking-[0.22em] uppercase block" style={{ color: 'var(--peach)' }}>Our Work</motion.span>
             <motion.h1 className="font-serif font-semibold text-black"
-              style={{ fontSize: 'clamp(2.5rem,6vw,4.5rem)', lineHeight: '1.08' }}>
-              Gallery<br/><em className="not-italic" style={{ color: 'var(--peach)' }}>Of Creations</em>
+              style={{ fontSize: 'clamp(2.5rem,5vw,3.5rem)', lineHeight: '1.1' }}>
+              Gallery
+              <br/><em className="not-italic" style={{ color: 'var(--peach)' }}>Of Creations</em>
             </motion.h1>
-            <motion.p className="font-sans font-light" style={{ color: 'rgba(0,0,0,0.65)', fontSize: '1.05rem' }}>
-              A showcase of our custom cakes, baking classes, and community moments.
+            <motion.p className="font-sans font-light max-w-xl" style={{ color: '#555555', fontSize: '1.05rem', lineHeight: '1.7' }}>
+              A showcase of our custom cakes, baking classes, and community moments in London.
             </motion.p>
           </motion.div>
         </div>
-        <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg"
-          style={{ display: 'block', width: '100%', position: 'absolute', bottom: 0 }}>
-          <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="white"/>
-        </svg>
       </section>
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div className="text-center max-w-xl mx-auto mb-14" initial="hidden" whileInView="visible" viewport={{ once: true }}>
+          <motion.div className="text-center max-w-2xl mx-auto mb-16" initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <motion.span className="section-eyebrow block mb-3">Featured</motion.span>
             <motion.h2 className="section-title">Recent <em className="not-italic" style={{ color: 'var(--peach)' }}>Work</em></motion.h2>
           </motion.div>
@@ -93,10 +89,10 @@ export default function Gallery() {
         </div>
       </section>
 
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white border-t border-black/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div className="text-center" initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <motion.span className="section-eyebrow block">Categories</motion.span>
+          <motion.div className="text-center mb-16" initial="hidden" whileInView="visible" viewport={{ once: true }}>
+            <motion.span className="section-eyebrow block mb-3">Categories</motion.span>
             <motion.h2 className="section-title">Explore <em className="not-italic" style={{ color: 'var(--peach)' }}>Our Specialties</em></motion.h2>
           </motion.div>
           <motion.div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6"

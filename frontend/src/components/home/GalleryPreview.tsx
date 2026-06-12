@@ -35,12 +35,12 @@ export default function GalleryPreview() {
   const items: (GalleryItem | null)[] = [...raw, ...Array(Math.max(0, 5 - raw.length)).fill(null)]
 
   return (
-    <section className="py-8 lg:py-16 bg-white">
+    <section className="py-12 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <motion.div
-          className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-12"
+          className="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-16"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
